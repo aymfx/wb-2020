@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公司简介</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <style>
+        header {
+            font-size: .426667rem;
+            color: #fff;
+            text-align: center;
+            height: 1.066667rem;
+            position: relative;
+            line-height: 1.066667rem;
+            background: -webkit-gradient(linear, left top, left bottom, from(#6dcb28), to(#356213));
+            background: linear-gradient(180deg, #6dcb28, #356213)
+        }
+
+        .left-back {
+            position: absolute;
+            width: 1.066667rem;
+            height: 1.066667rem;
+            left: 0;
+        }
+
+        .left-back:after {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            width: .266667rem;
+            height: .266667rem;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            left: .4rem;
+            top: .4rem;
+            border-left: .053333rem solid #fff;
+            border-bottom: .053333rem solid #fff
+        }
+
+        .banner {
+            /* height: 2.666667rem; */
+            width: 100%;
+        }
+
+        .h3 {
+            color: #cb0024;
+            font-size: .5rem;
+            padding: .266667rem .666667rem;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .h3>div {
+            color: #738997;
+            font-size: .24rem;
+            padding-left: .133333rem;
+        }
+
+        article {
+            text-indent: 2em;
+            font-size: .32rem;
+            padding: 0 .666667rem;
+            /* margin-bottom: .4rem; */
+        }
+
+        article p {
+            line-height: 1.5;
+        }
+
+        .box_q {
+            margin: 0.533333rem;
+        }
+
+        .box_q .img1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .box_q .img1 img {
+            width: 6.12rem;
+            height: 3.653333rem;
+            margin-bottom: .2rem;
+        }
+
+        .box_q .img2 {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .box_q .img2 img {
+            width: 4rem;
+            height: 2.186667rem;
+            margin-bottom: .2rem;
+        }
+
+        .box_m {
+            margin: .3rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .box_m .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: .4rem;
+            width: 4.5rem;
+        }
+
+        .box_m .item img {
+            width: 3.866667rem;
+            height: 2.4rem;
+        }
+
+        .box_m .item p {
+            margin-top: .233333rem;
+            font-size: .28rem;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="../js/rem.js"></script>
+
+    <header>
+        <div class="left-back"></div>
+        广东天农食品有限公司溯源系统
+    </header>
+    <img src='../assets/v1_banner.png' class="banner" />
+    <div class="h3">
+        公司简介<div>COMPANY INTRODUCTION</div>
+    </div>
+    <article>
+        <p>
+            广东天农食品有限公司创立于 2003 年 3 月，总部位于广东省清远市飞来峡，是一家致力于高端禽、肉、蛋食品的农业产业化国家重点龙头企业。
+        </p>
+        <p>
+            公司以“全链条、全循环、全生态”为发展理念，以“公司＋基地＋家庭农场＋标准化＋品牌化”为经营模式，在广东、重庆及贵州等地形成了原种清远鸡、原种土猪和长顺绿壳鸡蛋三大产业布局，公司集原种保种、良种繁育、种苗孵化、饲料生产、生态养殖、疾病防控、生鲜屠宰、食品精深加工、品牌营销于一体，形成“从种源到餐桌”的全产业链经营格局，封闭运行，全程可追溯。
+        </p>
+        <p>
+            公司以品种资源为依托，推行绿色健康养殖及高品质食品加工，以烙守食品安全，追求极致美味、方便快捷为产品理念，开发出生鲜、调理、配菜、高品质鸡蛋、熟食品和微量元素功能食品等系列产品，畅销中国各大城市的高端商超和餐饮市场，深受优质客户和消费者赞誉。
+        </p>
+    </article>
+
+    <div class="box_q">
+        <div class="img1">
+            <img src='../assets/v1_a1.png' />
+            <img src='../assets/v1_a2.png' />
+        </div>
+        <div class="img2">
+            <img src='../assets/v1_a3.png' />
+            <img src='../assets/v1_a4.png' />
+            <img src='../assets/v1_a5.png' />
+            <img src='../assets/v1_a6.png' />
+        </div>
+    </div>
+    <div class="h3">
+        公司资质<div>COMPANY QUALIFICATIONS</div>
+    </div>
+    <div class="box_m">
+        <div class="item">
+            <img src="../assets/v1_b1.png" />
+            <p>农业产业化国家重点龙头企业</p>
+        </div>
+        <div class="item">
+            <img src="../assets/v1_b2.png" />
+            <p>国家扶贫龙头企业</p>
+        </div>
+        <div class="item">
+            <img src="../assets/v1_b3.png" />
+            <p>农业部清远鸡原种保护场</p>
+        </div>
+        <div class="item">
+            <img src="../assets/v1_b4.png" />
+            <p>国家首批核心肉鸡育种场</p>
+        </div>
+        <div class="item">
+            <img src="../assets/v1_b5.png" />
+            <p>国家首批肉鸡良种扩繁推广基地</p>
+        </div>
+        <div class="item">
+            <img src="../assets/v1_b6.png" />
+            <p>广东高新技术企业</p>
+        </div>
+        <div class="item">
+            <img src="../assets/v1_b7.png" />
+            <p>中国畜牧行业百强优秀企业</p>
+        </div>
+        <div class="item">
+            <img src="../assets/v1_b8.png" />
+            <p>广东省电子商务示范企业</p>
+        </div>
+        <div class="item">
+            <img src="../assets/v1_b9.png" />
+            <p>国际食品出口生产备案企业</p>
+        </div>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.9.0/jquery.js"></script>
+    <script>
+        $(function () {
+            var page = {
+                init: function () {
+                    this.bindEvent()
+                },
+                bindEvent() {
+                    var $left_back = $('.left-back');
+                    $left_back.on('click', function () {
+                        window.history.back()
+                    })
+                }
+            }
+            page.init()
+        })
+    </script>
+</body>
+
+</html>
