@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公司简介</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <style>
+        header {
+            font-size: .426667rem;
+            color: #fff;
+            text-align: center;
+            height: 1.066667rem;
+            position: relative;
+            line-height: 1.066667rem;
+            background: -webkit-gradient(linear, left top, left bottom, from(#6dcb28), to(#356213));
+            background: linear-gradient(180deg, #6dcb28, #356213)
+        }
+
+        .left-back {
+            position: absolute;
+            width: 1.066667rem;
+            height: 1.066667rem;
+            left: 0;
+        }
+
+        .left-back:after {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            width: .266667rem;
+            height: .266667rem;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            left: .4rem;
+            top: .4rem;
+            border-left: .053333rem solid #fff;
+            border-bottom: .053333rem solid #fff
+        }
+
+        body,
+        html {
+            background-color: #f5f5f5;
+        }
+
+        .logo {
+            width: 2.56rem;
+            height: 2.413333rem;
+            display: block;
+            margin: .266667rem auto 0;
+        }
+
+        .l_1 {
+            color: #300c07;
+            font-size: .6rem;
+            text-align: center;
+            margin-top: .5rem;
+        }
+
+
+        .l_2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .l_2 .box {
+            width: 4.266667rem;
+            height: .56rem;
+            font-size: .32rem;
+            text-align: center;
+            line-height: .56rem;
+            background-color: #300c07;
+            border-radius: .2rem;
+            color: #fff;
+            margin: .3rem .266667rem;
+            letter-spacing: .15rem;
+        }
+
+        .main {
+            width: 9.6rem;
+            height: 21.546667rem;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .footer {
+            width: 9.6rem;
+            height: 8.106667rem;
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="../js/rem.js"></script>
+
+    <header>
+        <div class="left-back"></div>
+        广东天农食品有限公司溯源系统
+    </header>
+    <img src='../assets/qingyuan/logo.png' class="logo" />
+    <p class="l_1">名鸡千年·一味相传</p>
+    <div class="l_2">
+        <p>─</p>
+        <div class="box">天农原种清远鸡</div>
+        <p>─</p>
+    </div>
+    <img src="../assets/qingyuan/bg1.png" class="main">
+    <img src="../assets/qingyuan/bg.png" class="footer" />
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.9.0/jquery.js"></script>
+    <script>
+        $(function () {
+            var page = {
+                init: function () {
+                    this.bindEvent()
+                },
+                bindEvent() {
+                    var $left_back = $('.left-back');
+                    $left_back.on('click', function () {
+                        window.history.back()
+                    })
+                }
+            }
+            page.init()
+        })
+    </script>
+</body>
+
+</html>
