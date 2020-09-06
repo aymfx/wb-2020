@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>湖州南浔佳味食品有限公司溯源系统</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <style>
+        header {
+            font-size: .426667rem;
+            color: #fff;
+            text-align: center;
+            height: 1.066667rem;
+            position: relative;
+            line-height: 1.066667rem;
+            background: -webkit-gradient(linear, left top, left bottom, from(#6dcb28), to(#356213));
+            background: linear-gradient(180deg, #6dcb28, #356213)
+        }
+
+        .left-back {
+            position: absolute;
+            width: 1.066667rem;
+            height: 1.066667rem;
+            left: 0;
+        }
+
+        .left-back:after {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            width: .266667rem;
+            height: .266667rem;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            left: .4rem;
+            top: .4rem;
+            border-left: .053333rem solid #fff;
+            border-bottom: .053333rem solid #fff
+        }
+
+        .head-pic {
+            width: 100%;
+        }
+
+
+
+
+        .footer-info {
+            font-size: .326667rem;
+            height: 1.066667rem;
+            line-height: 1.066667rem;
+            text-align: center;
+            height: 1.066667rem;
+            text-align: center;
+            color: #666;
+            background-color: #e4e4e4
+        }
+
+        .form {
+            margin: 0 auto;
+            margin-bottom: .533333rem;
+            width: 90%;
+        }
+
+        .form .top::before {
+            content: "*";
+            color: #ff4949;
+            margin-right: .02rem
+        }
+
+        .form .top {
+            display: block;
+            font-size: .373333rem;
+            color: #48576a;
+            line-height: 1;
+            padding: .2rem .1rem;
+            margin-top: .4rem;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+        .form .bot {
+            width: 100%;
+        }
+
+        .form .bot input {
+            font-size: .36rem;
+            width: 100%;
+            height: .6rem;
+            border: 2px solid #bfcbd9;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: #fff;
+            background-image: none;
+            -webkit-border-radius: .106667rem;
+            border-radius: .106667rem;
+            border: .026667rem solid #bfcbd9;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            color: #1f2d3d;
+            height: .96rem;
+            line-height: 1;
+            outline: 0;
+            padding: .08rem .266667rem;
+            -webkit-transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+            transition: border-color .2s cubic-bezier(.645, .045, .355, 1)
+        }
+
+        .form .bot textarea {
+            font-size: .36rem;
+            width: 100%;
+            border: 2px solid #bfcbd9;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: #fff;
+            background-image: none;
+            -webkit-border-radius: .106667rem;
+            border-radius: .106667rem;
+            border: .026667rem solid #bfcbd9;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            color: #1f2d3d;
+            height: .96rem;
+            line-height: 1;
+            outline: 0;
+            padding: .3rem .266667rem;
+            -webkit-transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+            transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+            resize: none;
+            height: 2rem;
+        }
+
+        .btn-wrap {
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn {
+            margin-top: .16rem;
+            background-color: #319c2a;
+            border-color: #319c2a;
+            font-size: .426667rem;
+            color: #fff;
+            padding: .3rem .8rem;
+            border-radius: .16rem;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="../js/rem.js"></script>
+    <header>
+        <div class="left-back"></div>
+        湖州南浔佳味食品有限公司溯源系统
+    </header>
+    <img src="../assets/feedback_head.png" alt="" class="head-pic">
+    <form class="form">
+        <div class="box">
+            <label class="top">
+                姓名：
+            </label>
+            <div class="bot">
+                <input type="text" placeholder="您的名字" name="name">
+            </div>
+        </div>
+        <div class="box">
+            <label class="top">
+                联系方式：
+            </label>
+            <div class="bot">
+                <input type="number" placeholder="手机号/QQ号/邮箱/微信" name="name">
+            </div>
+        </div>
+        <div class="box">
+            <label class="top">
+                留言：
+            </label>
+            <div class="bot">
+                <textarea type="text" placeholder="投诉内容" name="name"></textarea>
+            </div>
+        </div>
+        <div class="btn-wrap">
+            <div class="btn">
+                提交
+            </div>
+        </div>
+    </form>
+    <div class="footer-info"> 技术支持：宁波亿业软件有限公司，13732107188 </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.9.0/jquery.js"></script>
+    <script>
+        $(function () {
+            var page = {
+                init: function () {
+                    this.bindEvent()
+                },
+                bindEvent() {
+                    var $left_back = $('.left-back');
+                    $left_back.on('click', function () {
+                        window.history.back()
+                    })
+                }
+            }
+            page.init()
+        })
+    </script>
+</body>
+
+</html>

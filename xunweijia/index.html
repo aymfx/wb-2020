@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>湖州南浔佳味食品有限公司溯源系统</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <style>
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .header-pic {
+            width: 100%;
+        }
+
+        .footer-info {
+            font-size: .326667rem;
+            height: 1.066667rem;
+            line-height: 1.066667rem;
+            text-align: center;
+            height: 1.066667rem;
+            text-align: center;
+            color: #666;
+            background-color: #e4e4e4
+        }
+
+        header {
+            font-size: .426667rem;
+            color: #fff;
+            text-align: center;
+            height: 1.066667rem;
+            position: relative;
+            line-height: 1.066667rem;
+            background: -webkit-gradient(linear, left top, left bottom, from(#6dcb28), to(#356213));
+            background: linear-gradient(180deg, #6dcb28, #356213)
+        }
+
+        .product-info {
+            margin: .266667rem .4rem .4rem;
+            border: .026667rem solid #d1dbe5;
+            -webkit-border-radius: .106667rem;
+            border-radius: .106667rem;
+            background-color: #fff;
+            overflow: hidden;
+            -webkit-box-shadow: 0 .053333rem .106667rem 0 rgba(0, 0, 0, .12), 0 0 .16rem 0 rgba(0, 0, 0, .04);
+            box-shadow: 0 .053333rem .106667rem 0 rgba(0, 0, 0, .12), 0 0 .16rem 0 rgba(0, 0, 0, .04)
+        }
+
+        .el-card__header {
+            height: .933333rem;
+            border-bottom: .026667rem solid #d1dbe5;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            text-align: center;
+            color: #319c2a;
+            line-height: .933333rem;
+            font-size: .286667rem;
+        }
+
+        .el-card__body {
+            padding: .266667rem;
+        }
+
+        .el-card__body .item {
+            display: flex;
+            font-size: .3rem;
+            line-height: 1.8;
+        }
+
+        .el-card__body .item.red {
+            color: #f00;
+        }
+
+        .el-card__body .item .l {
+            padding-right: 10px;
+        }
+
+        .el-card__body .content {
+            padding-top: 20px;
+            text-indent: 2em;
+            line-height: 1.8;
+            font-size: .32rem;
+        }
+
+        .nav {
+            height: 1.866667rem;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: start;
+            -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            border-bottom: .026667rem dashed #959595;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            display: flex;
+        }
+
+        .nav .l {
+            display: flex;
+        }
+
+        .nav .l img {
+            width: 1.2rem;
+            height: 1.2rem;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center
+        }
+
+        .nav .l .box {
+            padding-top: .08rem;
+            padding-left: .266667rem;
+            font-size: .32rem;
+            width: 6.08rem;
+        }
+
+        .nav .l .box p:nth-of-type(1) {
+            font-size: .36rem;
+            line-height: 1.2;
+        }
+
+        .nav .l .box p:nth-of-type(2) {
+            color: #999;
+            font-size: .32rem;
+            line-height: 1.4;
+            max-height: .933333rem;
+            overflow: hidden;
+            text-overflow: ellipsis
+        }
+
+        .nav-next-icon {
+            font-size: .48rem;
+            text-align: center;
+            position: relative;
+            left: 10px;
+            color: #666;
+            -webkit-animation: iconshow 1.5s infinite;
+            animation: iconshow 1.5s infinite;
+            width: .666667rem;
+            -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+            flex-shrink: 0
+        }
+
+        .nav-next-icon .you {
+            width: .426667rem;
+            height: .426667rem;
+        }
+
+        @-webkit-keyframes iconshow {
+            0% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes iconshow {
+            0% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./js/rem.js"></script>
+    <header>
+        湖州南浔佳味食品有限公司溯源系统
+    </header>
+    <img src="./assets/contact_head2.jpg" class="header-pic">
+    <div class="product-info">
+        <div class="el-card__header">
+            产品名称：清远鸡
+        </div>
+        <div class="el-card__body">
+            <div class="item red">
+                <div class="l">
+                    溯源编码
+                </div>
+                <div class="r">
+                    S301130720377001
+                </div>
+            </div>
+            <div class="item red">
+                <div class="l">
+                    查询次数
+                </div>
+                <div class="r">
+                    16
+                </div>
+            </div>
+            <div class="item">
+                <div class="l">
+                    养殖企业：
+                </div>
+                <div class="r">
+                    阿萨达奥大奥大所
+                </div>
+            </div>
+            <div class="item">
+                <div class="l">
+                    养殖企业：
+                </div>
+                <div class="r">
+                    阿萨达奥大奥大所
+                </div>
+            </div>
+            <div class="item">
+                <div class="l">
+                    养殖企业：
+                </div>
+                <div class="r">
+                    阿萨达奥大奥大所
+                </div>
+            </div>
+            <div class="item">
+                <div class="l">
+                    养殖企业：
+                </div>
+                <div class="r">
+                    阿萨达奥大奥大所
+                </div>
+            </div>
+            <div class="item">
+                <div class="l">
+                    养殖企业：
+                </div>
+                <div class="r">
+                    阿萨达奥大奥大所
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product-info">
+        <div class="el-card__header">
+            湖州南浔佳味食品有限公司简介
+        </div>
+        <div class="el-card__body">
+            <p class="content">
+                湖州南浔温氏佳味食品有限公司是农业产业化国家重点龙头企业——广东温氏食品集团股份有限公司在华东区域投资设立的第一家以屠宰加工、销售优质家禽为主的子公司。公司位于太湖边湖州市千金镇，占地45亩，投资1.2亿元，采用国内最先进的自动化、标准化的肉鸡屠宰线加工设备，一期工程年屠宰加工优质肉鸡2000万只。公司拥有育种场、种鸡场、孵化厂、饲料厂、检测中心、肉鸡养殖小区、竹林山坡养殖基地等一体化的无公害养殖产业链。并建设有标准化、规范化的肉鸡屠宰加工厂、严格宰前、宰中、宰后的检验检疫工作，全程冷链加工、冷链分级包装、低温冷藏、冷链配送、终端品牌门店经营。主要经营优质土鸡，产品系列有太湖草鸡、清远鸡、岭南皇鸡、土二公、乌骨鸡、妃子凤、竹凤香、竹凤黄、瑶乡土等地方优质鸡种，以中高端品牌冷鲜鸡或冻鸡为主。从农场到餐桌，全产业链经营，层层把关、严格检疫，确保食品安全，以“优质、放心、新鲜、美味”的优质冷鲜家禽产品供应给广大消费者，致力打造中国自养肉类加工第一品牌。
+            </p>
+        </div>
+    </div>
+    <div class="product-info">
+        <div class="el-card__header">
+            公司导航
+        </div>
+        <div class="el-card__body">
+            <a class="nav" href="./pages/detail.html">
+                <div class="l">
+                    <img src="./assets/company_detail.png" class="img">
+                    <div class="box">
+                        <p>
+                            公司详情
+                        </p>
+                        <p>
+                            这里展示的是公司的详细介绍
+                        </p>
+                    </div>
+                </div>
+                <div class="nav-next-icon"><img src='./assets/youjiantou.png' class="you" /></div>
+            </a>
+            <a class="nav" href="./pages/product.html">
+                <div class="l">
+                    <img src="./assets/company_detail.png" class="img">
+                    <div class="box">
+                        <p>
+                            产品系列
+                        </p>
+                        <p>
+                            在这里，可以图文并茂地展示公司主营产品，也可以上传产品视频
+                        </p>
+                    </div>
+                </div>
+                <div class="nav-next-icon"><img src='./assets/youjiantou.png' class="you" /></div>
+            </a>
+            <a class="nav" href="./pages/quality.html">
+                <div class="l">
+                    <img src="./assets/company_detail.png" class="img">
+                    <div class="box">
+                        <p>
+                            质量投诉
+                        </p>
+                        <p>
+                            消费者可以将产品质量问题直接提交到厂家总部
+                        </p>
+                    </div>
+                </div>
+                <div class="nav-next-icon"><img src='./assets/youjiantou.png' class="you" /></div>
+            </a>
+            <a class="nav" href="./pages/kefu.html">
+                <div class="l">
+                    <img src="./assets/company_detail.png" class="img">
+                    <div class="box">
+                        <p>
+                            客服中心
+                        </p>
+                        <p>
+                            公司客服的各种联系方式，包括电话、QQ、微信、地图等
+                        </p>
+                    </div>
+                </div>
+                <div class="nav-next-icon"><img src='./assets/youjiantou.png' class="you" /></div>
+            </a>
+        </div>
+    </div>
+    <!-- <a href="./pages/detail.html">集团简介</a>
+    <a href="./pages/product.html">产品介绍</a>
+    <a href="./pages/qingyuan.html">清远鸡介绍</a> -->
+    <div class="footer-info"> 技术支持：宁波亿业软件有限公司，13732107188 </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.9.0/jquery.js"></script>
+    <script>
+        $(function () {
+            var page = {
+                init: function () {
+                    this.bindEvent()
+                },
+                bindEvent() {
+                    var $left_back = $('.left-back');
+                    $left_back.on('click', function () {
+                        window.history.back()
+                    })
+                }
+            }
+            page.init()
+        })
+    </script>
+</body>
+
+</html>
